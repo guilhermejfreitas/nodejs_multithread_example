@@ -9,9 +9,7 @@ function createThread(){
 
     const worker = new Worker('./interation');
     const result = new Promise((resolve, reject) => {
-        console.log('test');
         worker.once('message', (message) => {
-            console.log('test');
             return resolve(message)
         });
 
