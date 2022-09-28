@@ -1,5 +1,3 @@
-# nodejs_multithread_example
-
 # Nodejs MultiThread
 ## Sim, é possível e é simples.
 
