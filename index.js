@@ -7,7 +7,7 @@ const {Worker} = require('node:worker_threads');
 
 function createThread(){
 
-    const worker = new Worker('./interation');
+    const worker = new Worker('./thread_process');
     const result = new Promise((resolve, reject) => {
         worker.once('message', (message) => {
             return resolve(message)
